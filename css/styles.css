@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+.header{
+    padding: 20px 10px;
+}
+.main-nav
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-items{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 15px;
+}
+
+.main-nav-links:link,.main-nav-links:visited
+{
+    text-decoration: none;
+    color: #E45826;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+.active:link{
+    color: white;
+    background-color: #E45826;
+    padding: 10px 15px
+}
+.logo{
+    width: 75px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-hero{
+   padding: 10px 0;
+
+}
+
+.hero{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #4A3933;
+    height: 50vh;
+}
+
+.hero-text{
+    padding: 50px 40px;
+}
+
+.primary-heading
+{
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #F0A500;
+}
+
+.sub-heading
+{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.image-box
+{
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    background-position:center;
+    
+}
+
+button
+{
+    border: none;
+    outline: none;
+}
+
+.link-btn:link,.link-btn:visited
+{
+    background-color: #E45826;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 15px;
+    font-size: 20px;
+}
+
+.section-offers
+{
+    padding: 20px 0;
+}
+
+.content
+{
+    padding: 10px 20px;
+}
+
+.content .primary-heading
+{
+    color: black;
+}
+
+.content .sub-heading
+{
+    color: black;
+    font-weight: 200;
+}
+
+.pricing
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-image
+{
+    width: 400px;
+}
+
+.card{
+    text-align: center;
+    width: 100%;
+    border: 1px solid red;
+    height: 50vh;
+}
