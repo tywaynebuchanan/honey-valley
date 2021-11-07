@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    font-family: "Work Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .header{
@@ -54,7 +54,7 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    width: 400px;
     margin: 0 auto;
 }
 .section-hero{
@@ -119,17 +119,17 @@ button
 
 .content
 {
-    padding: 10px 20px;
+    padding: 40px 40px;
 }
 
 .content .primary-heading
 {
-    color: black;
+    color: #212529;
 }
 
 .content .sub-heading
 {
-    color: black;
+    color: #212529;
     font-weight: 200;
 }
 
@@ -137,20 +137,226 @@ button
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
-    padding: 0px 20px;
-    justify-content: space-between;
-    align-items: center;
+    gap: 10px;
+   justify-content: right;
+   align-items: center;
+   justify-items: right;
 }
 
-.product-image
-{
-    width: 400px;
+.pricing img{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .card{
     text-align: center;
-    width: 100%;
-    border: 1px solid red;
+    width: 80%;
+    /* border: 1px solid red; */
     height: 50vh;
+    background-color: #F8F5F2;
+    padding: 60px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    box-shadow: 4px 4px 17px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    position: relative;
 }
+
+.grams{
+    font-size: 25px;
+}
+
+.product-header
+{
+    color: #212529;
+}
+
+
+.product-contents {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.price{
+    font-size: 50px;
+}
+.cta-btn{
+    padding: 40px;
+}
+
+.card-link-btn:link
+{
+    background-color: #E45826;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 40px;
+    font-size: 18px;
+}
+
+.card:nth-child(3)
+{
+    border-top: 40px solid #E45826;
+    border-left: 10px solid #E45826;
+    border-right: 10px solid #E45826;
+    border-bottom: 10px solid #E45826;
+    
+}
+
+.card:nth-child(3)::after{
+    content:"Most Popular";
+    position: absolute;
+    top: -8%;
+    right: 30%;
+    padding: 0px 10px;
+    /* background-color: #E45826; */
+    /* display: block; */
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+
+.section-benefits
+{
+    padding: 20px 0;
+}
+
+.benefits-content{
+    padding: 40px 40px;
+    background-color: #E6D5B8;
+}
+.benefits-content .primary-heading
+{
+    color:#212529;
+
+}
+
+.benefits-container 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.benefits{
+    padding: 20px 20px;
+}
+
+.benefits-header
+{
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.benefits p{
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #212529;
+}
+
+.section-testify
+{
+    padding: 40px 40px;
+}
+
+.testify-content .primary-heading
+{
+    color:#212529;
+}
+
+.testify-content 
+{
+    margin-bottom: 60px;
+}
+
+.test-cards 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.test-card-items img{
+    border-radius: 50%;
+    
+}
+
+.test-card-items
+{
+    background-color: #F8F5F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    text-align: center;
+    row-gap: 10px;
+}
+
+.headshot img
+{
+    width: 80%;
+}
+.names{
+    font-size: 20px;
+    font-weight: 600;
+}
+.test-card-items p{
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #212529;
+}
+
+.testify-content p{
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #212529;
+}
+
+.section-cta
+{
+    padding: 40px 20px;
+    background-color: #4A3933;
+}
+
+.cta-contents .primary-heading
+{
+    color:white;
+}
+
+.cta-contents
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-btn-cta:link
+{
+    text-decoration: none;
+    color: white;
+    background-color: #E45826;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
