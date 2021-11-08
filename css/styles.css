@@ -39,14 +39,14 @@ body{
 {
     text-decoration: none;
     color: #E45826;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
     
 }
 
-.active:link{
+.active:link, .active:visited{
     color: white;
-    background-color: #E45826;
+     background-color: #E45826;
     padding: 10px 15px
 }
 .logo{
@@ -54,11 +54,11 @@ body{
 }
 
 .container{
-    width: 400px;
+    width: 800px;
     margin: 0 auto;
 }
 .section-hero{
-   padding: 10px 0;
+   padding: 5px 0;
 
 }
 
@@ -85,7 +85,7 @@ body{
 {
     color: white;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .image-box
@@ -119,7 +119,7 @@ button
 
 .content
 {
-    padding: 40px 40px;
+    padding: 20px 20px;
 }
 
 .content .primary-heading
@@ -137,25 +137,22 @@ button
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-   justify-content: right;
+    justify-content: right;
    align-items: center;
    justify-items: right;
 }
 
 .pricing img{
-    width: 60%;
+    width: 80%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .card{
     text-align: center;
-    width: 80%;
-    /* border: 1px solid red; */
-    height: 50vh;
+    width: 90%;
     background-color: #F8F5F2;
-    padding: 60px 10px;
+    padding: 40px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,7 +188,7 @@ button
     padding: 40px;
 }
 
-.card-link-btn:link
+.card-link-btn:link, .card-link-btn:visited
 {
     background-color: #E45826;
     text-decoration: none;
@@ -199,6 +196,7 @@ button
     display: block;
     padding: 20px 40px;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .card:nth-child(3)
@@ -213,14 +211,12 @@ button
 .card:nth-child(3)::after{
     content:"Most Popular";
     position: absolute;
-    top: -8%;
-    right: 30%;
+    top: -6%;
+    right: 25%;
     padding: 0px 10px;
-    /* background-color: #E45826; */
-    /* display: block; */
     color: white;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
    
 }
 
@@ -258,7 +254,7 @@ button
 }
 
 .benefits p{
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.5;
     font-size: 18px;
     color: #212529;
@@ -346,7 +342,7 @@ button
     align-items: center;
 }
 
-.link-btn-cta:link
+.link-btn-cta:link, .link-btn-cta:visited
 {
     text-decoration: none;
     color: white;
@@ -357,6 +353,59 @@ button
     font-weight: 600;
 }
 
+.footer
+{
+    background-color: #F8F5F1;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.footer-text
+{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content:center;
+   column-gap: 20px;
+   padding: 40px 0;
+   width: 1000px;
+   margin: 0 auto;
+}
+
+.menu-list
+{
+    list-style: none;
+}
+
+.footer-nav-links:visited,.footer-nav-links:link
+{
+    color: #E45826;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.icon
+{
+    color:#212529;
+}
+
+.secondary-heading
+{
+    color:#212529;
+    margin-bottom: 10px;
+}
+
+.tertiary-heading{
+    font-size: 30px;
+    color: white;
+}
 
 
-
+.copyright
+{
+    text-align: center;
+    padding: 20px 0;
+    /* font-size: 18px; */
+    font-weight: 700;
+    color:#E45826;
+}
