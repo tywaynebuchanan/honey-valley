@@ -6,7 +6,6 @@
 
 html{
     font-size: 16px;
-
 }
 
 body{
@@ -15,7 +14,40 @@ body{
 
 .header{
     padding: 20px 10px;
+    position: relative;
+  
 }
+
+/* General Styling*/
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.secondary-heading
+{
+    color:#212529;
+    margin-bottom: 10px;
+}
+
+.primary-heading
+{
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #F0A500;
+}
+
+.tertiary-heading{
+    font-size: 30px;
+    color: white;
+}
+
+/* Navigation Bar*/
+
+.logo{
+    width: 75px;
+}
+
 .main-nav
 {
     display: flex;
@@ -40,7 +72,8 @@ body{
     text-decoration: none;
     color: #E45826;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
+    display: inline-block;
     
 }
 
@@ -49,37 +82,17 @@ body{
      background-color: #E45826;
     padding: 10px 15px
 }
-.logo{
-    width: 75px;
-}
 
-.container{
-    width: 800px;
-    margin: 0 auto;
-}
 .section-hero{
    padding: 5px 0;
-
 }
 
 .hero{
-    
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: #4A3933;
-    height: 50vh;
 }
 
-.hero-text{
-    padding: 50px 40px;
-}
-
-.primary-heading
-{
-    font-size: 45px;
-    margin-bottom: 15px;
-    color: #F0A500;
-}
 
 .sub-heading
 {
@@ -88,12 +101,17 @@ body{
     font-size: 16px;
 }
 
+.hero-text{
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
 .image-box
 {
     background-image: url("../img/intro.jpg");
     background-size: cover;
-    background-position:center;
-    
+    background-position:center;   
 }
 
 button
@@ -109,8 +127,11 @@ button
     text-decoration: none;
     font-weight: 600;
     padding: 15px 15px;
-    font-size: 20px;
+    font-size: 18px;
+
 }
+
+/*Section Offers*/
 
 .section-offers
 {
@@ -140,6 +161,14 @@ button
     justify-content: right;
    align-items: center;
    justify-items: right;
+
+}
+.grams{
+    font-size: 25px;
+}
+
+.price{
+    font-size: 50px;
 }
 
 .pricing img{
@@ -162,15 +191,10 @@ button
     position: relative;
 }
 
-.grams{
-    font-size: 25px;
-}
-
 .product-header
 {
     color: #212529;
 }
-
 
 .product-contents {
    display: flex;
@@ -181,9 +205,6 @@ button
     margin-bottom: 20px;
 }
 
-.price{
-    font-size: 50px;
-}
 .cta-btn{
     padding: 40px;
 }
@@ -199,6 +220,7 @@ button
     font-weight: 600;
 }
 
+/*Psuedo class to target third card */
 .card:nth-child(3)
 {
     border-top: 40px solid #E45826;
@@ -219,10 +241,15 @@ button
     font-weight: 800;
    
 }
+/* Section Benefits*/
 
 .section-benefits
 {
     padding: 20px 0;
+}
+
+.benefits{
+    padding: 20px 20px;
 }
 
 .benefits-content{
@@ -232,7 +259,6 @@ button
 .benefits-content .primary-heading
 {
     color:#212529;
-
 }
 
 .benefits-container 
@@ -243,9 +269,6 @@ button
     column-gap: 20px;
 }
 
-.benefits{
-    padding: 20px 20px;
-}
 
 .benefits-header
 {
@@ -259,6 +282,8 @@ button
     font-size: 18px;
     color: #212529;
 }
+
+/* Testimonials */
 
 .section-testify
 {
@@ -322,6 +347,8 @@ button
     font-size: 18px;
     color: #212529;
 }
+
+/* Call to action */
 
 .section-cta
 {
@@ -388,18 +415,6 @@ button
 {
     color:#212529;
 }
-
-.secondary-heading
-{
-    color:#212529;
-    margin-bottom: 10px;
-}
-
-.tertiary-heading{
-    font-size: 30px;
-    color: white;
-}
-
 
 .copyright
 {
