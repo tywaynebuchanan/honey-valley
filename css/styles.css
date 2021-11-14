@@ -1,3 +1,8 @@
+/*Lato Font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*Fira Sans Font*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,11 +10,12 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .header{
@@ -26,7 +32,7 @@ body{
 
 .secondary-heading
 {
-    color:#212529;
+    color:#444444;
     margin-bottom: 10px;
 }
 
@@ -42,10 +48,15 @@ body{
     color: white;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: "Fira Sans", sans-serif;
+}
+
 /* Navigation Bar*/
 
 .logo{
-    width: 75px;
+    width: 48px;
+    height:56px;
     margin-right: auto;
 }
 
@@ -65,7 +76,7 @@ body{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .main-nav-links:link,.main-nav-links:visited
@@ -75,13 +86,21 @@ body{
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
+    padding: 10px 10px;
+    transition: all 0.4s ease; 
     
 }
 
 .active:link, .active:visited{
     color: white;
      background-color: #E45826;
-    padding: 10px 15px
+    
+}
+
+.main-nav-links:hover,.main-nav-links:active{
+    color: white;
+     background-color: #E45826;
+    
 }
 
 .section-hero{
@@ -152,7 +171,7 @@ button
 .content .sub-heading
 {
     color: #212529;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .pricing
@@ -301,6 +320,7 @@ button
     margin-bottom: 60px;
 }
 
+
 .test-cards 
 {
     display: grid;
@@ -318,6 +338,7 @@ button
 .test-card-items
 {
     background-color: #F8F5F1;
+    color: #444444;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,6 +346,13 @@ button
     padding: 40px 30px;
     text-align: center;
     row-gap: 10px;
+    transition: all 0.4s ease-in;
+}
+
+.test-card-items:hover{
+    background-color: #E45826;
+    color: white;
+    
 }
 
 .headshot img
@@ -336,17 +364,17 @@ button
     font-weight: 600;
 }
 .test-card-items p{
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.5;
     font-size: 18px;
-    color: #212529;
+    color: #444444;
 }
 
+
 .testify-content p{
-    font-weight: 100;
     line-height: 1.5;
     font-size: 18px;
-    color: #212529;
+    color: #444444;
 }
 
 /* Call to action */
@@ -414,14 +442,14 @@ button
 
 .icon
 {
-    color:#212529;
+    color:#444444;
 }
 
 .copyright
 {
     text-align: center;
     padding: 20px 0;
-    /* font-size: 18px; */
+    font-size: 18px;
     font-weight: 700;
     color:#E45826;
 }
